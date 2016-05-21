@@ -11,9 +11,9 @@ function Laden() {
 	DecimalWerteKonvertieren(true)
 	else {
 		DecimalWerteKonvertieren(false)
-		BKaufAnz = Decimal(0)
-		CKaufAnz = Decimal(0)
-		ExAKaufAnz = Decimal(0)
+		Sp.BKaufAnz = Decimal(0)
+		Sp.CKaufAnz = Decimal(0)
+		Sp.ExAKaufAnz = Decimal(0)
 	}
 	Rechnen()
 	BilTxtAkt()
