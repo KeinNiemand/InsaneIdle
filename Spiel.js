@@ -158,6 +158,7 @@ function BKauf () {
 			Sp.APreis = ABasPreis
 			Rechnen()
 			MKaufPrRch()
+			Sp.BKaufAnz = Sp.BKaufAnz.add(1)
 		}	
 	//}
 }
@@ -190,6 +191,7 @@ function CKauf () {
 		Sp.BPreis = BBasPreis
 		Rechnen()
 		MKaufPrRch()
+		Sp.CKaufAnz = Sp.CKaufAnz.add(1)
 	}
 }
 
@@ -208,6 +210,7 @@ function ExAKauf () {
 		Sp.CPreis = CBasPreis
 		Rechnen()
 		MKaufPrRch()
+		Sp.ExAKaufAnz = Sp.ExAKaufAnz.add(1)
 	}
 }
 function SchaltStatus(Variable) {
