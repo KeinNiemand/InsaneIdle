@@ -16,6 +16,10 @@ function Laden() {
 	Sp.BPreis = Decimal.fromJSON(Sp.BPreis)
 	Sp.CPreis = Decimal.fromJSON(Sp.CPreis)
 	Sp.ExAPreis = Decimal.fromJSON(Sp.ExAPreis)
+	Sp.BKaufAnz = Decimal.fromJSON(Sp.BKaufAnz)
+	Sp.CKaufAnz = Decimal.fromJSON(Sp.CKaufAnz)
+	Sp.ExAKaufAnz = Decimal.fromJSON(Sp.ExAKaufAnz)
+	
 	Rechnen()
 	BilTxtAkt()
 	MKaufPrRch()
