@@ -198,6 +198,7 @@ function CKauf () {
 		Rechnen()
 		MKaufPrRch()
 		Sp.CKaufAnz = Sp.CKaufAnz.add(1)
+		Sp.BKaufAnz = Decimal(0)
 	}
 }
 
@@ -217,6 +218,8 @@ function ExAKauf () {
 		Rechnen()
 		MKaufPrRch()
 		Sp.ExAKaufAnz = Sp.ExAKaufAnz.add(1)
+		Sp.BKaufAnz = Decimal(0)
+		Sp.CKaufAnz = Decimal(0)
 	}
 }
 function SchaltStatus(Variable) {
