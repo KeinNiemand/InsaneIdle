@@ -51,9 +51,9 @@ MultiKaufAnzahl = Decimal(1)
 KaufModusA = false;
 KaufModusB = false;
 Spielstand = 'LIdleS';
-BKaufAnzTxt = document.getElementById("BKaufAnz")
-CKaufAnzTxt = document.getElementById("CKaufAnz")
-ExAKaufAnzTxt = document.getElementById("ExAKaufAnz")
+BKaufAnzTxt = document.getElementById("BKaufAnzAnz")
+CKaufAnzTxt = document.getElementById("CKaufAnzAnz")
+ExAKaufAnzTxt = document.getElementById("ExAKaufAnzAnz")
 
 function BilTxtAkt ()
 	{
