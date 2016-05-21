@@ -1,2 +1,2 @@
 Insane Idle
-V.1.1.0b
+V.1.1.1
