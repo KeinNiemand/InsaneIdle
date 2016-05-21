@@ -7,10 +7,14 @@ function Laden() {
     if (!localStorage[Spielstand]) return;
     var save_data = JSON.parse(atob(localStorage[Spielstand]));
     Sp = save_data;
-	if (Sp.BKaufAnz != Decimal(0) || null)
+	if (typeof Sp.BKaufAnz != 'undefined')
 	DecimalWerteKonvertieren(true)
-	else
-	DecimalWerteKonvertieren(false)
+	else {
+		DecimalWerteKonvertieren(false)
+		BKaufAnz = Decimal(0)
+		CKaufAnz = Decimal(0)
+		ExAKaufAnz = Decimal(0)
+	}
 	Rechnen()
 	BilTxtAkt()
 	MKaufPrRch()
