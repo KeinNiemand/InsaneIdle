@@ -69,9 +69,9 @@ function BilTxtAkt ()
 	ExAPreisTxt.textContent = Sp.ExAPreis.toPrecision(3);
 	MaxKaufTxt.textContent = SchaltStatus(KaufModusA)
 	KaufModusBTxt.textContent = SchaltStatus(KaufModusB)
-	BKaufAnzTxt.textContent = BKaufAnz.toPrecision(6);
-	CKaufAnzTxt.textContent = CKaufAnz.toPrecision(6);
-	ExAKaufAnzTxt.textContent = ExAKaufAnz.toPrecision(6);
+	BKaufAnzTxt.textContent = Sp.BKaufAnz.toPrecision(6);
+	CKaufAnzTxt.textContent = Sp.CKaufAnz.toPrecision(6);
+	ExAKaufAnzTxt.textContent = Sp.ExAKaufAnz.toPrecision(6);
 	}
 	
 function Rechnen () {
