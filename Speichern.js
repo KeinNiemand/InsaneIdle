@@ -35,6 +35,9 @@ function Reset() {
 	Sp.BPreis = BBasPreis
 	Sp.CPreis = CBasPreis
 	Sp.ExAPreis = ExABasPreis
+	BKaufAnz = Decimal(0);
+	CKaufAnz = Decimal(0);
+	ExAKaufAnz = Decimal(0);
 	Rechnen();
 	BilTxtAkt();
 	MKaufPrRch();
