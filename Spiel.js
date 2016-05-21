@@ -41,7 +41,10 @@ APreis : Decimal(ABasPreis),
 BPreis : Decimal(BBasPreis),
 CPreis : Decimal(CBasPreis),
 ExAPreis : Decimal(ExABasPreis),
-lastUpdate: new Date().getTime()
+lastUpdate: new Date().getTime(),
+BKaufAnz : Decimal(0),
+CKaufAnz : Decimal(0),
+ExAKaufAnz : Decimal(0)
 }
 MultiPreis = Decimal(0)
 MultiKaufAnzahl = Decimal(1)
