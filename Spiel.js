@@ -234,13 +234,14 @@ function SchaltStatus(Variable) {
 }
 
 function MaxAKaufMengeBestimmen() {
-        if (Sp.APreis.gt(Sp.Geld)) {
-           MultiKaufAnzahl = 1;
+		MultiKaufAnzahl = 1;
+		if (Sp.APreis.gt(Sp.Geld)) {
+			MultiKaufAnzahl = 1;
         }
         //var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA - 1)) , Sp.APreis) , Decimal.log(PreisErhA)));
 		var result = Decimal.div(Decimal.log(Decimal.add(1,Decimal.div(Decimal.mul((PreisErhA - 1) , Sp.Geld) , Sp.APreis))) , Decimal.log(PreisErhA));
         // cast the result to an int
-        MultiKaufAnzahl = Decimal.ROUND_DOWN(result.floor())
+        MultiKaufAnzahl = Decimal.round(result.floor())
 		MKaufPrRch()
     }
 
