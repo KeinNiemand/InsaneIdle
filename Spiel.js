@@ -235,6 +235,7 @@ function SchaltStatus(Variable) {
 
 function MaxAKaufMengeBestimmen() {
 		MultiKaufAnzahl = 1;
+		MKaufPrRch()
 		if (Sp.APreis.gt(Sp.Geld)) {
 			MultiKaufAnzahl = 1;
         }
