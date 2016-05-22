@@ -87,7 +87,7 @@ function ProFrame (modi) {
 
 function MKaufPrRch() {
 	MultiPreis = Decimal(0)
-	if (MultiKaufAnzahl.gt(1))
+	if (MultiKaufAnzahl)
 	MultiPreis = Sp.APreis.mul(Decimal.div(Decimal.sub(Decimal.pow(PreisErhA, MultiKaufAnzahl), 1), (PreisErhA - 1)));
 	else
 	MultiPreis = Sp.APreis
@@ -237,8 +237,9 @@ function MaxAKaufMengeBestimmen() {
         if (Sp.APreis.gt(Sp.Geld)) {
            MultiKaufAnzahl = 1;
         }
-        var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA - 1)) , Sp.APreis) , Decimal.log(PreisErhA)));
+        //var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA - 1)) , Sp.APreis) , Decimal.log(PreisErhA)));
+		var result = Decimal.div(Decimal.log(Decimal.add(1,Decimal.div(Decimal.mul((PreisErhA - 1) , Sp.Geld) , Sp.APreis))) , Decimal.log(PreisErhA));
         // cast the result to an int
-        MultiKaufAnzahl = result | Decimal(1)
+        MultiKaufAnzahl = Decimal(result) | Decimal(1)
     }
 
