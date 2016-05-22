@@ -93,7 +93,8 @@ function MKaufPrRch() {
 	MultiPreis = Sp.APreis
 	//for (i = Decimal(0);(MultiKaufAnzahl.gt(i));i=i.add(1)){
 		//MultiPreis = MultiPreis.add(Sp.APreis.mul(Decimal.pow(PreisErhA, i)))
-}}
+//}
+}
 
 function AKauf () {
 	if (Sp.Geld.gte(MultiPreis)) {
