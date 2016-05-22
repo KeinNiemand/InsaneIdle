@@ -115,11 +115,9 @@ function SetMultiKaufAnzahl(){
 }
 
 function MaxAKauf () {
-	MKaufPrRch()
-	while (Sp.Geld.gte(MultiPreis)) {
-		MKaufPrRch()
-		AKauf()
-	}
+	MaxAKaufMengeBestimmen()
+	AKauf()
+	
 }
 
 function ModusAendern (Variable) {
@@ -239,8 +237,8 @@ function MaxAKaufMengeBestimmen() {
         if (Sp.APreis.gt(Sp.Geld)) {
            MultiKaufAnzahl = 1;
         }
-        var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA.sub(1))) , singlePurchaseCost) , Decimal.log(PreisErhA)));
+        var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA - 1)) , singlePurchaseCost) , Decimal.log(PreisErhA)));
         // cast the result to an int
         MultiKaufAnzahl = result | Decimal(1)
     }
-}
+
