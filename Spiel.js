@@ -88,7 +88,7 @@ function ProFrame (modi) {
 function MKaufPrRch() {
 	MultiPreis = Decimal(0)
 	if MultiKaufAnzahl != 1
-	MultiPreis = Sp.APreis * ((Decimal.pow(ABasPreis, MultiKaufAnzahl) - 1) / (PreisErhA - 1));
+	MultiPreis = Sp.APreis.mul(Decimal.div(Decimal.sub(Decimal.pow(ABasPreis, MultiKaufAnzahl), 1), (PreisErhA.sub(1))));
 	else
 	MultiPreis = Sp.APreis
 	//for (i = Decimal(0);(MultiKaufAnzahl.gt(i));i=i.add(1)){
