@@ -258,7 +258,7 @@ function SchaltStatus(Variable) {
 
 function MaxAKaufMengeBestimmen() {
 		if (Sp.APreis.gt(Sp.Geld)) {
-			MaxKaufAnz = 1;
+			MaxKaufAnz = Decimal(1);
         }
 		else {
 			//var result = Decimal.log(Decimal.div(Decimal.div(Sp.Geld.mul(Decimal.add(1,PreisErhA - 1)) , Sp.APreis) , Decimal.log(PreisErhA)));
