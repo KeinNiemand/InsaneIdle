@@ -140,7 +140,6 @@ function SetMultiKaufAnzahl(){
 function MaxAKauf () {
 	MaxAKaufMengeBestimmen()
 	AKauf()
-	MaxAKaufMengeBestimmen()
 }
 
 function ModusAendern (Variable) {
