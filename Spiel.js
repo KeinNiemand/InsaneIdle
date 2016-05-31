@@ -86,23 +86,26 @@ function ProFrame (modi) {
 	BilTxtAkt()
 }
 
-function MKaufPrRchFormK(Decimal Zahl) {
+function MKaufPrRchFormK(Zahl) {
 return	MultiPreis = Sp.APreis.mul(Decimal.div(Decimal.sub(Decimal.pow(PreisErhA, Zahl), 1), (PreisErhA - 1)));
 }
 
 function MKaufPrRch() {
 	MultiPreis = Decimal(0)
 	if (KaufModusA == false) {
-		if (MultiKaufAnzahl.gte(1))
+		if (MultiKaufAnzahl.gte(1)) {
 			MultiPreis = MKaufPrRchFormK(MultiKaufAnzahl);
-		else
+			
+		} else {
 		MultiPreis = Sp.APreis
-	}
-	else (KaufModusA == false) {
+		}
+	} 
+	else {
 		if (MaxKaufAnz.gte(1))
 			MultiPreis = MKaufPrRchFormK(MaxKaufAnz);
 		else
 		MultiPreis = Sp.APreis
+	}
 	//for (i = Decimal(0);(MultiKaufAnzahl.gt(i));i=i.add(1)){
 		//MultiPreis = MultiPreis.add(Sp.APreis.mul(Decimal.pow(PreisErhA, i)))
 //}
