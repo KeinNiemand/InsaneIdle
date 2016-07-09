@@ -8,3 +8,4 @@ setInterval(function(){
   ProFrame(diff);
   Sp.lastUpdate = thisUpdate;
 }, 1000/FPS);
+setInterval (AutoAktu, 1000);
