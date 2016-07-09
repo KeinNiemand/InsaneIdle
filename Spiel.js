@@ -180,7 +180,6 @@ function BKauf () {
 		//}
 	//} 
 	//else {
-	´
 		if (Sp.Geld.gte(Sp.BPreis)) {
 			Sp.Geld = Sp.Geld.sub(Sp.BPreis)
 			Sp.BPreis = Sp.BPreis.mul(PreisErhB)
