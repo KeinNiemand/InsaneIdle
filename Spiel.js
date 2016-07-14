@@ -77,10 +77,10 @@ function BilTxtAkt ()
 	BKaufAnzTxt.textContent = Sp.BKaufAnz.toPrecision(6);
 	CKaufAnzTxt.textContent = Sp.CKaufAnz.toPrecision(6);
 	ExAKaufAnzTxt.textContent = Sp.ExAKaufAnz.toPrecision(6);
-        AKnopf.style.color = FarbBes(MultiPreis)
-        BKnopf.style.color = FarbBes(Sp.BPreis)
-        CKnopf.style.color = FarbBes(Sp.CPreis)
-        ExAKnopf.style.color = FarbBes(Sp.ExAPreis)
+        AKnopf.style.background = FarbBes(MultiPreis, false)
+        BKnopf.style.background = FarbBes(Sp.BPreis, false)
+        CKnopf.style.background = FarbBes(Sp.CPreis, false)
+        ExAKnopf.style.background = FarbBes(Sp.ExAPreis, true)
 	}
 	
 function Rechnen () {
@@ -282,10 +282,12 @@ MaxAKaufMengeBestimmen()
 else
 MKaufPrRch()
 }
-function FarbBes(sache) {
+function FarbBes(sache, expo) {
     if (Sp.Geld.gte(sache)) {
-        
-        return "silver";
+        if (expo)
+            return "red";
+        else
+            return "silver";
     }     
     else {
         return "grey";
