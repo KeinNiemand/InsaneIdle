@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>  Insane Idle v1.3.0</title>
+	<title>  Insane Idle v1.4.0</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -19,21 +19,21 @@
 		<p>
 			<div class='Hauptknoepfe'>
 				(
-				<span class="Knopf HKnofp" onclick="AKaufen()"> 
+				<span class="Knopf HKnofp" onclick="AKaufen()" id="AKnopf"> 
 					<span  id="A"  > </span>
 					<br /> 
 					Price: <span id="APreisAnz"> </span>
 				
 				
 				</span> x
-				 <span class="Knopf HKnofp" onclick="BKaufen()">
+				 <span class="Knopf HKnofp" onclick="BKaufen()" id="BKnopf">
 					<span  id="B"> </span>
 					<br /> 
-					Price: <span id="BPreisAnz"> </span>
+					Price: <span id="BPreisAnz" id="BKnopf"> </span>
 					<br /> 
 					bought: <span id="BKaufAnzAnz"> </span>
 				</span> x
-				<span class="Knopf HKnofp" onclick="CKauf()">
+				<span class="Knopf HKnofp" onclick="CKauf()" id="CKnopf">
 					<span  id="C" > </span>
 					<br /> 
 					Price: <span id="CPreisAnz"> </span>
@@ -58,7 +58,7 @@
 	 PreisAnzeigen> 
 	<ul>
 		<li>
-			APrice: <span id="APreis"> </span>
+				APrice: <span id="APreis"> </span>
 		<li> 	BPrice: <span id="BPreis"> </span>
 		<li> 	CPrice: <span id="CPreis"> </span>
 		<li> 	ExAPrice: <span id="ExAPreis"> </span>
@@ -66,7 +66,7 @@
 	<!--- Mehrfach Kauf und Reset --->
 	<p> <span onclick="SetMultiKaufAnzahl()" class="Knopf"> Buy Multi </span> </p>
 	<p> <span onclick='ModusAendern("KaufModusA")' class="Knopf"> Buy Max A: <span id="BuyMaxKno"> </span> </span>
-	<p> <span onclick='ModusAendern("KaufModusB")' class="Knopf"> Buy Max B (Very Lagy): <span> id="BMulti/MaxKno" </span> </p>
+	<p> <span onclick='ModusAendern("KaufModusB")' class="Knopf"> Buy Max B (Very Lagy): <span id="BMulti/MaxKno" </span> </p>
 	<p> <span onclick="Reset()" class="Knopf"> Reset </span> </p>
 	<p> <span onclick="AendernSpielstandCo()" class="Knopf">Change Save State/Code</span> </p>
 	<!--- Sonstige Infos --->

@@ -55,6 +55,10 @@ BKaufAnzTxt = document.getElementById("BKaufAnzAnz")
 CKaufAnzTxt = document.getElementById("CKaufAnzAnz")
 ExAKaufAnzTxt = document.getElementById("ExAKaufAnzAnz")
 MaxKaufAnz = Decimal(1);
+AKnopf = document.getElementById("AKnopf")
+BKnopf = document.getElementById("BKnopf")
+CKnopf = document.getElementById("CKnopf")
+ExAKnopf = document.getElementById("ExAKnopf")
 
 function BilTxtAkt ()
 	{
@@ -73,6 +77,10 @@ function BilTxtAkt ()
 	BKaufAnzTxt.textContent = Sp.BKaufAnz.toPrecision(6);
 	CKaufAnzTxt.textContent = Sp.CKaufAnz.toPrecision(6);
 	ExAKaufAnzTxt.textContent = Sp.ExAKaufAnz.toPrecision(6);
+        AKnopf.style.background = FarbBes(MultiPreis, false)
+        BKnopf.style.background = FarbBes(Sp.BPreis, false)
+        CKnopf.style.background = FarbBes(Sp.CPreis, false)
+        ExAKnopf.style.background = FarbBes(Sp.ExAPreis, true)
 	}
 	
 function Rechnen () {
@@ -273,4 +281,17 @@ if (KaufModusA)
 MaxAKaufMengeBestimmen()
 else
 MKaufPrRch()
+}
+function FarbBes(sache, expo) {
+    if (Sp.Geld.gte(sache)) {
+        if (expo)
+            return "red";
+        else
+            return "silver";
+    }     
+    else {
+        return "grey";
+        
+    }
+        
 }

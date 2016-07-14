@@ -1,3 +1,5 @@
 1.3.0
 -Buy Max A Price Refreshes Automaticly every Second Now
 -Added File for chanelog
+1.4.0
+-If you don't have enough mony to buy somthing it will be grayed out
