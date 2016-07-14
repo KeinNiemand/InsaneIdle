@@ -278,3 +278,10 @@ MaxAKaufMengeBestimmen()
 else
 MKaufPrRch()
 }
+
+function FarbBes(sache) {
+    if (Sp.Geld.gte(sache)) 
+        return true;
+    else
+        return false;
+}
