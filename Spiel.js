@@ -55,6 +55,10 @@ BKaufAnzTxt = document.getElementById("BKaufAnzAnz")
 CKaufAnzTxt = document.getElementById("CKaufAnzAnz")
 ExAKaufAnzTxt = document.getElementById("ExAKaufAnzAnz")
 MaxKaufAnz = Decimal(1);
+AKnopf = document.getElementById("AKnopf")
+BKnopf = document.getElementById("BKnopf")
+CKnopf = document.getElementById("CKnopf")
+ExAKaufAnzTxt = document.getElementById("ExAKnopf")
 
 function BilTxtAkt ()
 	{
