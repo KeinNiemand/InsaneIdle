@@ -28,9 +28,9 @@ MaxKaufTxt = document.getElementById("BuyMaxKno");
 KaufModusBTxt = document.getElementById("BMulti/MaxKno");
 FPS = 30;
 PreisErhA = 1.21;
-PreisErhB = 11.231
-PreisErhC = 17.131
-PreisErhExA = 866.66
+PreisErhB = 11.231;
+PreisErhC = 17.131;
+PreisErhExA = 566.66;
 var Sp = {
 Geld : Decimal(1),
 A : Decimal(1),
