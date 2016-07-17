@@ -27,10 +27,10 @@ ExAPreisTxt = document.getElementById("ExAPreisAnz");
 MaxKaufTxt = document.getElementById("BuyMaxKno");
 KaufModusBTxt = document.getElementById("BMulti/MaxKno");
 FPS = 30;
-PreisErhA = 1.205;
-PreisErhB = 9.9
-PreisErhC = 13.99
-PreisErhExA = 866.66
+PreisErhA = 1.21;
+PreisErhB = 11.231;
+PreisErhC = 17.131;
+PreisErhExA = 566.66;
 var Sp = {
 Geld : Decimal(1),
 A : Decimal(1),
@@ -278,14 +278,19 @@ function MaxAKaufMengeBestimmen() {
 
 function AutoAktu() {
 if (KaufModusA)
-MaxAKaufMengeBestimmen()
+MaxAKaufMengeBestimmen();
 else
-MKaufPrRch()
+MKaufPrRch();
 }
 function FarbBes(sache, expo) {
     if (Sp.Geld.gte(sache)) {
-        if (expo)
-            return "red";
+        if (expo) {
+            if(Sp.Geld.add(GeldPS.mul(2)).gte(Sp.APreis) || Sp.Geld.add(GeldPS.mul(8)).gte(Sp.BPreis) || Sp.Geld.add(GeldPS.mul(60)).gte(Sp.CPreis) ){
+                return "red";
+            }
+            else
+                return "green";
+        }
         else
             return "silver";
     }     

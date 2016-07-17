@@ -7,3 +7,6 @@
 -Link to my Subbreddid added
 1.4.0b
 -Added Link to Basic Idle 2
+1.5.0
+-The Last Number will becoume green if it'S recommedet to buy it
+-The Game is harder/slower now if It's to slow post it in the subbreddit
