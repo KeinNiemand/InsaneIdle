@@ -3,3 +3,7 @@
 -Added File for chanelog
 1.4.0
 -If you don't have enough mony to buy somthing it will be grayed out
+1.4.0a
+-Link to my Subbreddid added
+1.4.0b
+-Added Link to Basic Idle 2
