@@ -278,14 +278,19 @@ function MaxAKaufMengeBestimmen() {
 
 function AutoAktu() {
 if (KaufModusA)
-MaxAKaufMengeBestimmen()
+MaxAKaufMengeBestimmen();
 else
-MKaufPrRch()
+MKaufPrRch();
 }
 function FarbBes(sache, expo) {
     if (Sp.Geld.gte(sache)) {
-        if (expo)
-            return "red";
+        if (expo) {
+            if(Decimal.gte(Sp.Geld.add(GeldPS.mul(60)) , Sp.APreis ) || Decimal.gte(Sp.Geld.add(GeldPS.mul(60)) , Sp.BPreis ) || Decimal.gte(Sp.Geld.add(GeldPS.mul(60)) , Sp.CPreis )){
+                return "red";
+            }
+            else
+                return "green";
+        }
         else
             return "silver";
     }     
