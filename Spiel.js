@@ -285,7 +285,7 @@ MKaufPrRch();
 function FarbBes(sache, expo) {
     if (Sp.Geld.gte(sache)) {
         if (expo) {
-            if(Sp.Geld.add(GeldPS.mul(60).gte (Sp.APreis) ) || Sp.Geld.add(GeldPS.mul(60).gte(Sp.BPreis) ) || Sp.Geld.add(GeldPS.mul(60)).gte(Sp.CPreis) ){
+            if(Sp.Geld.add(GeldPS.mul(2)).gte(Sp.APreis) || Sp.Geld.add(GeldPS.mul(8)).gte(Sp.BPreis) || Sp.Geld.add(GeldPS.mul(60)).gte(Sp.CPreis) ){
                 return "red";
             }
             else
