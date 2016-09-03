@@ -12,3 +12,5 @@
 -The Game is harder/slower now if It's to slow post it in the subbreddit
 1.5.1
 -Bufixes
+1.5.1a
+-Added Google Analytics
