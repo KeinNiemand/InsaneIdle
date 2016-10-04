@@ -83,9 +83,9 @@ function BilTxtAkt ()
         CKnopf.style.background = FarbBes(Sp.CPreis, false)
         ExAKnopf.style.background = FarbBes(Sp.ExAPreis, true)
         if (KaufModusA){
-            AKaufAnzTxt.textContent = MaxKaufAnz.toPrecision(6);
+            AKaufAnzTxt.textContent = MaxKaufAnz.toPrecision(3);
         } else {
-            AKaufAnzTxt.textContent = MultiKaufAnzahl.toPrecision(6);
+            AKaufAnzTxt.textContent = MultiKaufAnzahl.toPrecision(3);
         }
         
 	}
