@@ -14,3 +14,5 @@
 -Bufixes
 1.5.1a
 -Added Google Analytics
+1.5.2
+-Set Bacground Color to White
