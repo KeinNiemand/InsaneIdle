@@ -16,3 +16,5 @@
 -Added Google Analytics
 1.5.2
 -Set Bacground Color to White
+1.6.0
+-The buy A button now shows how many you buy

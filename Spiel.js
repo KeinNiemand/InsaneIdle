@@ -59,6 +59,7 @@ AKnopf = document.getElementById("AKnopf")
 BKnopf = document.getElementById("BKnopf")
 CKnopf = document.getElementById("CKnopf")
 ExAKnopf = document.getElementById("ExAKnopf")
+AKaufAnzTxt= document.getElementById("AKaufAnz")
 
 function BilTxtAkt ()
 	{
@@ -81,6 +82,12 @@ function BilTxtAkt ()
         BKnopf.style.background = FarbBes(Sp.BPreis, false)
         CKnopf.style.background = FarbBes(Sp.CPreis, false)
         ExAKnopf.style.background = FarbBes(Sp.ExAPreis, true)
+        if (KaufModusA){
+            AKaufAnzTxt.textContent = MaxKaufAnz.toPrecision(6);
+        } else {
+            AKaufAnzTxt.textContent = MultiKaufAnzahl.toPrecision(6);
+        }
+        
 	}
 	
 function Rechnen () {
