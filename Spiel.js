@@ -288,6 +288,7 @@ if (KaufModusA)
 MaxAKaufMengeBestimmen();
 else
 MKaufPrRch();
+statAkt();
 }
 function FarbBes(sache, expo) {
     if (Sp.Geld.gte(sache)) {
