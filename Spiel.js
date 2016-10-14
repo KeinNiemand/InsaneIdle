@@ -308,14 +308,3 @@ function FarbBes(sache, expo) {
     }
         
 }
-
-//Kongregate Stuff
-//Loading The API
-kongregateAPI.loadAPI(function(){
-  window.kongregate = kongregateAPI.getAPI();
-});
-
-function statAkt() {
-    kongregate.stats.submit('Test', 1000);
-    kongregate.stats.submit('ExA', Sp.ExA.log10().toNumber());
-}
