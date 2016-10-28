@@ -26,3 +26,5 @@
 -Added Kongregate statistics (I don't know If they will work)
 -Added Confirmation to the Reset button
 -Buttons are now looking better
+1.7.1
+-Stat API Fix (Maybe)
