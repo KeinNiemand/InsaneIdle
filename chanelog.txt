@@ -28,3 +28,5 @@
 -Buttons are now looking better
 1.7.1
 -Stat API Fix (Maybe)
+1.7.2
+-Minor Visual Improvments

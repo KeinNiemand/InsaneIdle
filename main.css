@@ -1,5 +1,6 @@
 body {
    background-color: white; 
+   font-family: Segoe UI Semibold,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue Frutiger, Verdana;
 }
 
 .Hauptknoepfe{
@@ -8,7 +9,7 @@ text-align:center;
 }
 
 .Knopf{
-border: 5px solid black;
+border: 3px black;
 background-color: silver;
 border-style: outset;
 border-radius: 4px;
