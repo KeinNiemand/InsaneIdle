@@ -40,6 +40,12 @@ function Reset() {
 	MKaufPrRch();
 }
 
+function ResetK() {
+    var code = prompt("This will completly delete your save you will not get anything type in yes and click ok to reset", "No");
+    if (code == "yes")
+    Reset()
+}
+
 function SpeichSpielstandCo() {
 	localStorage['SpielstandCode666789'] = btoa(Spielstand);
 }
