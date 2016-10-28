@@ -101,11 +101,10 @@
         <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
         <script>
             var kongregate;
-            var LoadingAPI = window.parent.LoadingAPI;
-            if (LoadingAPI)
-                kongregate = window.parent.kongregateAPI.getAPI();
+            kongregateAPI.loadAPI(function(){
+            window.kongregate = kongregateAPI.getAPI();
 
-            // Initialize
+                                            });
         </script>
 	<script src=decimal.js> </script>
 	<script src=Spiel.js> </script>
