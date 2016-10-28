@@ -100,10 +100,14 @@
         </script>
         <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
         <script>
+// Load the API
 var kongregate;
-            var LoadingAPI = window.parent.LoadingAPI;
-            if (LoadingAPI)
-                kongregate = window.parent.kongregateAPI.getAPI();
+kongregateAPI.loadAPI(onComplete);
+
+// Callback function
+function onComplete(){
+  // Set the global kongregate API object
+  kongregate = kongregateAPI.getAPI();
         </script>
 	<script src=decimal.js> </script>
 	<script src=Spiel.js> </script>
