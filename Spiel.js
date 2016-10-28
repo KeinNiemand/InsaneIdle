@@ -308,3 +308,12 @@ function FarbBes(sache, expo) {
     }
         
 }
+
+function statAkt() {
+    kongregate.stats.submit('Money', Sp.Geld.log10().toNumber());
+    kongregate.stats.submit('Money per second', GeldPS.log10().toNumber());
+    kongregate.stats.submit('A', Sp.A.log10().toNumber());
+    kongregate.stats.submit('B', Sp.B.log10().toNumber());
+    kongregate.stats.submit('C', Sp.C.log10().toNumber());
+    kongregate.stats.submit('ExA', Sp.ExA.log10().toNumber());
+}
