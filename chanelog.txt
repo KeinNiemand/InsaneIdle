@@ -22,3 +22,7 @@
 -Testing Kongregate statistics API
 -Added version information at the bottom of the page
 -removed Version.txt
+1.7.0
+-Added Kongregate statistics (I don't know If they will work)
+-Added Confirmation to the Reset button
+-Buttons are now looking better
