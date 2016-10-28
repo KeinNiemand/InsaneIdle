@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>  Insane Idle v1.6.0</title>
+	<title>  Insane Idle v1.6.0a</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -83,6 +83,7 @@
         <div> I've got the Idea to this game from an ohter game called <a href="http://www.kongregate.com/games/Speedlv/basic-idle-2">Basic Idle 2</a> </div>
         <br/>
         <div> This Site uses Google Analytics </div>
+        <p> Version 1.6.0a </p>
         
         
         
@@ -96,6 +97,16 @@
                 ga('create', 'UA-83650410-1', 'auto');
                 ga('send', 'pageview');
 
+        </script>
+        <script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+        <script>
+            var kongregate;
+            var LoadingAPI = window.parent.LoadingAPI;
+            if (LoadingAPI)
+                kongregate = window.parent.kongregateAPI.getAPI();
+
+            // Initialize
+            startLoading()
         </script>
 	<script src=decimal.js> </script>
 	<script src=Spiel.js> </script>

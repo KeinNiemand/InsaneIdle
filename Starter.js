@@ -9,3 +9,4 @@ setInterval(function(){
   Sp.lastUpdate = thisUpdate;
 }, 1000/FPS);
 setInterval (AutoAktu, 10000/FPS);
+kongregate.stats.submit('loaded', 1);
